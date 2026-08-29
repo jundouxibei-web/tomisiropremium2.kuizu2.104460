@@ -478,7 +478,7 @@ if (score >=-50){
     }
 }
 
-if (score >=0){
+if (score >0){
     if(score<60){
         document.getElementById('rakutan').textContent = "残念！君の今の得点だと60点未満となっているね！このままだと「豊城学Ⅱ」の単位取得条件を満たせない！このままじゃ留年確定の道だ！再履修は何度でも可能だから結果を保存してすぐにテストを始めよう！";
     }
