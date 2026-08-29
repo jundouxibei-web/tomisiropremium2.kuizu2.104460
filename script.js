@@ -18,10 +18,9 @@ const answer10 = "はるぱごるにすわシロー";
     document.querySelector('.setumei').style.display = 'none';
   document.querySelector('.toi').style.display = 'block';
   localStorage.setItem("score", 0);
+  let score = Number(localStorage.getItem("score")) || 0;
  });
 }
-
-let score = Number(localStorage.getItem("score")) || 0;
 
  const button1 = document.getElementById("hint1");
  if (button1) {
