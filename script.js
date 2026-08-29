@@ -18,9 +18,10 @@ const answer10 = "はるぱごるにすわシロー";
     document.querySelector('.setumei').style.display = 'none';
   document.querySelector('.toi').style.display = 'block';
   localStorage.setItem("score", 0);
-  let score = Number(localStorage.getItem("score")) || 0;
  });
 }
+
+let score = Number(localStorage.getItem("score")) || 0;
 
  const button1 = document.getElementById("hint1");
  if (button1) {
@@ -516,7 +517,7 @@ if (score === 100){
 
 document.getElementById("result").textContent =  score + "点";
 
-const share_title = `とよシローなにシロークイズ${score}点でした。`;
+const share_title = `とよシローなにシロークイズ２${score}点でした。`;
   const share_twitter = document.getElementById("js-share-twitter");
   share_twitter.setAttribute(
       "href",
