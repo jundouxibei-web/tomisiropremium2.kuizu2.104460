@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>とよシローなにシロークイズ2</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Yusei+Magic&display=swap');
+    body {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #63f1c6, #48c8ec);
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    
+  }
+   .mondaiwaku {
+    margin: 1em 0;
+    background: #fff9dc;
+    text-align: center;
+    color: #FF00FF
+}
+.mondaiwaku .box-title {
+    font-size: 0.8em;
+    background: #ff3300ce;
+    padding: 4px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.mondaiwaku p {
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.answaku{
+    padding: 8px 19px;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #cde4ff;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    font-size: 10px;
+}
+.answaku p {
+    margin: 0; 
+    padding: 0;
+}
+
+.ans{
+    padding: 0.5em 1em;
+    margin: 4em 0;
+    background: #f4f4f4;
+    border-left: solid 6px #b7665b;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+.ans p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+.toiwaku {
+    margin: 1em 0;
+    background: #fff9dc;
+    text-align: center;
+    color: #ffa600
+}
+.toiwaku .box-toiwaku {
+    font-size: 0.8em;
+    background: #ff3300ce;
+    padding: 4px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.toiwaku p {
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0;
+}
+.kai {
+  display: block;
+  margin: 20px auto;
+  
+}
+
+.input-box:focus {
+  border-bottom-color: #ff6f61;
+}
+
+.kai {
+  width: 70%;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 20px;
+  border-width: 10px;
+  align-items: center;
+  border-color: blanchedalmond;
+  outline: none;
+}
+
+.kai:focus {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px #ffb74d;
+}
+ #checktoi6 {
+    padding: 20px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #3730a3;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    display: block;
+    margin: 40px auto;
+  }
+  
+
+  #checktoi6:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #3730a3;
+  }
+
+  #checktoi6:hover {
+    background-color: #4338ca;
+  }
+    #hint6 {
+        display: block;
+        margin: 40px auto;
+    padding: 18px 48px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+ #hint6:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.4);
+  }
+
+.seikai {
+  font-family: "Yusei Magic", sans-serif;
+  color: red;
+  font-size: 60px;
+}
+
+.huseikai {
+  font-family:  "Yusei Magic", sans-serif;
+  color: blue;
+  font-size: 60px;
+}
+#gonext6 {
+    padding: 20px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #3730a3;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    display: block;
+    margin: 40px auto;
+  }
+  
+
+  #gonext6:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #3730a3;
+  }
+
+  #gonext6:hover {
+    background-color: #4338ca;
+  }
+
+
+</style>
+</head>
+  <body> 
+    <div class="toi">
+        <div class="toiwaku">
+    <div class="box-toiwaku"><h1>第６問</h1></div>
+    <p><h1>これはなにシロー？</h1></p>
+</div>
+ <p style="text-align:center"><img src="hima.jpg"  width="100%" height="100%"></p>
+    &nbsp;
+     <div class="mondai">
+      <div class="hintbtn">
+        <button id="hint6">ヒントを見る</button>
+        </div>
+        <div class="hint" style="display:none;">
+            <h1><font color="red">ヒント</font></h1>
+        <h1>とても”忙しそう”に見えるよね、、、</h1>
+        </div>
+        &nbsp;
+<h1>回答を入力</h1>
+<input type="text" class="kai" id="toyo6">
+<button id="checktoi6">答えを見る</button>
+</div>
+<p class="seikai"style="display:none;">正解！</p>
+<p class="ome" style="display:none;"><img src="wai.jpg"  width="40%" height="40%"></p>
+<p class="huseikai"style="display:none;">不正解</p>
+<p class="zan" style="display:none;"><img src="joy.jpg"  width="40%" height="40%"></p>
+    <div class="kaitou" style="display: none;">
+        <div class="answaku">
+           <h1>回答　びんぼうひまなシロー
+           </h1>
+        </div>
+      <div class="ans">
+           <p class="seikaikaisetu" style="display: none;">おめでとう！今回はヒントありでも
+            難しい問題だったよ！貧乏暇なしという言葉をできるだけ画像でわかりやすくしてみたけど偏見はないよ！
+           </p>
+           <p class="huseikaikaisetu" style="display: none;">これは貧乏暇なしっていう状態を表しているから
+            どう考えてもこの回答になるよね！でも難しいから優秀なみんなはここで初めての不正解になったかな？切り替えて次から取り戻そう！
+           </p>
+       </div>
+       <button id="gonext6">第７問へ</button>
+       
+  </div>
+
+
+
+<span id="score" style="display: none;"></span>
+<script src="script.js"></script>    
+    </body>
