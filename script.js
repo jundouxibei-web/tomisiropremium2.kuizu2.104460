@@ -1,7 +1,5 @@
  'use strict';
 
- let score = Number(localStorage.getItem("score")) || 0;
-
 const answer1 = "ろぼっとよシロー"; // 正解（例）
 const answer2 = "かーとよシロー";
 const answer3 = ["まっシロー","ほわいとよシロー","シロー"];
@@ -23,6 +21,7 @@ const answer10 = "はるぱごるにすわシロー";
  });
 }
 
+let score = Number(localStorage.getItem("score")) || 0;
 
  const button1 = document.getElementById("hint1");
  if (button1) {
