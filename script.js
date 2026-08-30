@@ -17,21 +17,21 @@ const answer10 = "はるぱごるにすわシロー";
  button0.addEventListener("click", () => {
     document.querySelector('.setumei').style.display = 'none';
   document.querySelector('.toi').style.display = 'block';
-  localStorage.setItem("score", 0);
+  localStorage.setItem("score2", 0);
  });
 }
 
-let score = Number(localStorage.getItem("score")) || 0;
+let score2 = Number(localStorage.getItem("score2")) || 0;
 
  const button1 = document.getElementById("hint1");
  if (button1) {
  button1.addEventListener("click", () => {
   document.querySelector('.hint').style.display = 'block';
    document.querySelector('.hintbtn').style.display = 'none';
-  score -= 5; 
-    document.getElementById("score").textContent = score;
+  score2 -= 5; 
+    document.getElementById("score2").textContent = score2;
     console.log('-5');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
  });
  }
 
@@ -43,10 +43,10 @@ const input = document.getElementById("toyo1").value;
 document.querySelector('.kaitou').style.display = 'block';
 document.querySelector('.mondai').style.display = 'none';
 if (input === answer1) {
-    score += 10; 
-    document.getElementById("score").textContent = score;
+    score2 += 10; 
+    document.getElementById("score2").textContent = score2;
    console.log('+10');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
     
      document.querySelector('.seikai').style.display = 'block';
      document.querySelector('.ome').style.display = 'block';
@@ -73,10 +73,10 @@ if (input === answer1) {
  button2.addEventListener("click", () => {
   document.querySelector('.hint').style.display = 'block';
    document.querySelector('.hintbtn').style.display = 'none';
-  score -= 5; 
-    document.getElementById("score").textContent = score;
+  score2 -= 5; 
+    document.getElementById("score2").textContent = score2;
     console.log('-5');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
  });
 }
 
@@ -88,10 +88,10 @@ const input = document.getElementById("toyo2").value;
 document.querySelector('.kaitou').style.display = 'block';
 document.querySelector('.mondai').style.display = 'none';
 if (input === answer2) {
-    score += 10; 
-    document.getElementById("score").textContent = score;
+    score2 += 10; 
+    document.getElementById("score2").textContent = score2;
    console.log('+10');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
     
      document.querySelector('.seikai').style.display = 'block';
      document.querySelector('.ome').style.display = 'block';
@@ -117,10 +117,10 @@ if (input === answer2) {
  button3.addEventListener("click", () => {
   document.querySelector('.hint').style.display = 'block';
    document.querySelector('.hintbtn').style.display = 'none';
-  score -= 5; 
-    document.getElementById("score").textContent = score;
+  score2 -= 5; 
+    document.getElementById("score2").textContent = score2;
     console.log('-5');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
  });
 }
 
@@ -132,10 +132,10 @@ const input = document.getElementById("toyo3").value;
 document.querySelector('.kaitou').style.display = 'block';
 document.querySelector('.mondai').style.display = 'none';
 if (answer3.includes(input)) {
-    score += 10; 
-    document.getElementById("score").textContent = score;
+    score2 += 10; 
+    document.getElementById("score2").textContent = score2;
    console.log('+10');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
     
      document.querySelector('.seikai').style.display = 'block';
      document.querySelector('.ome').style.display = 'block';
@@ -161,10 +161,10 @@ if (answer3.includes(input)) {
  button4.addEventListener("click", () => {
   document.querySelector('.hint').style.display = 'block';
    document.querySelector('.hintbtn').style.display = 'none';
-  score -= 5; 
-    document.getElementById("score").textContent = score;
+  score2 -= 5; 
+    document.getElementById("score2").textContent = score2;
     console.log('-5');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
  });
 }
 
@@ -176,10 +176,10 @@ const input = document.getElementById("toyo4").value;
 document.querySelector('.kaitou').style.display = 'block';
 document.querySelector('.mondai').style.display = 'none';
 if (input === answer4) {
-    score += 10; 
-    document.getElementById("score").textContent = score;
+    score2 += 10; 
+    document.getElementById("score2").textContent = score2;
    console.log('+10');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
     
      document.querySelector('.seikai').style.display = 'block';
      document.querySelector('.ome').style.display = 'block';
@@ -205,10 +205,10 @@ if (input === answer4) {
  button5.addEventListener("click", () => {
   document.querySelector('.hint').style.display = 'block';
    document.querySelector('.hintbtn').style.display = 'none';
-  score -= 5; 
-    document.getElementById("score").textContent = score;
+  score2 -= 5; 
+    document.getElementById("score2").textContent = score2;
     console.log('-5');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
  });
 }
 
@@ -220,10 +220,10 @@ const input = document.getElementById("toyo5").value;
 document.querySelector('.kaitou').style.display = 'block';
 document.querySelector('.mondai').style.display = 'none';
 if (input === answer5) {
-    score += 10; 
-    document.getElementById("score").textContent = score;
+    score2 += 10; 
+    document.getElementById("score2").textContent = score2;
    console.log('+10');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
     
      document.querySelector('.seikai').style.display = 'block';
      document.querySelector('.ome').style.display = 'block';
@@ -249,10 +249,10 @@ if (input === answer5) {
  button6.addEventListener("click", () => {
   document.querySelector('.hint').style.display = 'block';
    document.querySelector('.hintbtn').style.display = 'none';
-  score -= 5; 
-    document.getElementById("score").textContent = score;
+  score2 -= 5; 
+    document.getElementById("score2").textContent = score2;
     console.log('-5');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
  });
 }
 
@@ -264,10 +264,10 @@ const input = document.getElementById("toyo6").value;
 document.querySelector('.kaitou').style.display = 'block';
 document.querySelector('.mondai').style.display = 'none';
 if (input === answer6) {
-    score += 10; 
-    document.getElementById("score").textContent = score;
+    score2 += 10; 
+    document.getElementById("score2").textContent = score2;
    console.log('+10');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
     
      document.querySelector('.seikai').style.display = 'block';
      document.querySelector('.ome').style.display = 'block';
@@ -293,10 +293,10 @@ if (input === answer6) {
  button7.addEventListener("click", () => {
   document.querySelector('.hint').style.display = 'block';
    document.querySelector('.hintbtn').style.display = 'none';
-  score -= 5; 
-    document.getElementById("score").textContent = score;
+  score2 -= 5; 
+    document.getElementById("score2").textContent = score2;
     console.log('-5');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
  });
 }
 
@@ -308,10 +308,10 @@ const input = document.getElementById("toyo7").value;
 document.querySelector('.kaitou').style.display = 'block';
 document.querySelector('.mondai').style.display = 'none';
 if (input === answer7) {
-    score += 10; 
-    document.getElementById("score").textContent = score;
+    score2 += 10; 
+    document.getElementById("score2").textContent = score2;
    console.log('+10');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
     
      document.querySelector('.seikai').style.display = 'block';
      document.querySelector('.ome').style.display = 'block';
@@ -338,10 +338,10 @@ if (input === answer7) {
  button8.addEventListener("click", () => {
   document.querySelector('.hint').style.display = 'block';
    document.querySelector('.hintbtn').style.display = 'none';
-  score -= 5; 
-    document.getElementById("score").textContent = score;
+  score2 -= 5; 
+    document.getElementById("score2").textContent = score2;
     console.log('-5');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
  });
 }
 
@@ -353,10 +353,10 @@ const input = document.getElementById("toyo8").value;
 document.querySelector('.kaitou').style.display = 'block';
 document.querySelector('.mondai').style.display = 'none';
 if (input === answer8) {
-    score += 10; 
-    document.getElementById("score").textContent = score;
+    score2 += 10; 
+    document.getElementById("score2").textContent = score2;
    console.log('+10');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
     
      document.querySelector('.seikai').style.display = 'block';
      document.querySelector('.ome').style.display = 'block';
@@ -383,10 +383,10 @@ const button9 = document.getElementById("hint9");
  button9.addEventListener("click", () => {
   document.querySelector('.hint').style.display = 'block';
    document.querySelector('.hintbtn').style.display = 'none';
-  score -= 5; 
-    document.getElementById("score").textContent = score;
+  score2 -= 5; 
+    document.getElementById("score2").textContent = score2;
     console.log('-5');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
  });
 }
 
@@ -398,10 +398,10 @@ const input = document.getElementById("toyo9").value;
 document.querySelector('.kaitou').style.display = 'block';
 document.querySelector('.mondai').style.display = 'none';
 if (input === answer9) {
-    score += 10; 
-    document.getElementById("score").textContent = score;
+    score2 += 10; 
+    document.getElementById("score2").textContent = score2;
    console.log('+10');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
     
      document.querySelector('.seikai').style.display = 'block';
      document.querySelector('.ome').style.display = 'block';
@@ -427,10 +427,10 @@ const button10 = document.getElementById("hint10");
  button10.addEventListener("click", () => {
   document.querySelector('.hint').style.display = 'block';
    document.querySelector('.hintbtn').style.display = 'none';
-  score -= 5; 
-    document.getElementById("score").textContent = score;
+  score2 -= 5; 
+    document.getElementById("score2").textContent = score2;
     console.log('-5');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
  });
 }
 
@@ -442,10 +442,10 @@ const input = document.getElementById("toyo10").value;
 document.querySelector('.kaitou').style.display = 'block';
 document.querySelector('.mondai').style.display = 'none';
 if (input === answer10) {
-    score += 10; 
-    document.getElementById("score").textContent = score;
+    score2 += 10; 
+    document.getElementById("score2").textContent = score2;
    console.log('+10');
-    localStorage.setItem("score", score); // ← 保存
+    localStorage.setItem("score2", score2); // ← 保存
     
      document.querySelector('.seikai').style.display = 'block';
      document.querySelector('.ome').style.display = 'block';
@@ -472,52 +472,52 @@ function check11() {
   document.querySelector('.toi').style.display = 'none';
   document.querySelector('.kaito').style.display = 'block';
 
-if (score >=-50){
-    if(score<=0){
+if (score2 >=-50){
+    if(score2<=0){
      document.getElementById("zeroika").textContent = "ちょっと待ってちょっと待って！一点も取れてないの？なんならマイナス点なんですけど？ヒントを見たうえで正解数よりも不正解数が多いだなんてとても勉強不足な人なんだね、、、そんなドパガキみたいな生活はやめてまっとうに生きてみよう！";
     }
 }
 
-if (score >0){
-    if(score<60){
+if (score2 >0){
+    if(score2<60){
         document.getElementById('rakutan').textContent = "残念！君の今の得点だと60点未満となっているね！このままだと「豊城学Ⅱ」の単位取得条件を満たせない！このままじゃ留年確定の道だ！再履修は何度でも可能だから結果を保存してすぐにテストを始めよう！";
     }
 }
 
-if (score >=60){
-    if(score<70){
+if (score2 >=60){
+    if(score2<70){
         document.getElementById('C').textContent = "おめでとう！君の今回の成績は60点以上！よって「豊城学Ⅱ」の単位取得条件達成だ！この講義は1220単位に相当するから一気に卒業単位をゲットだね！でも君の成績はC評価！もう一度挑戦してまだまだ上を目指そう！";
     }
 }
 
-if (score >=70){
-    if(score<80){
+if (score2 >=70){
+    if(score2<80){
         document.getElementById('B').textContent = "おめでとう！君の今回の成績は70点以上！よって「豊城学Ⅱ」の単位取得条件達成だ！この講義は1220単位に相当するから一気に卒業単位をゲットだね！でも君の成績はB評価！もう一度挑戦してまだまだ上を目指そう！";
     }
 }
 
-if (score >=80){
-    if(score<90){
+if (score2 >=80){
+    if(score2<90){
         document.getElementById('A').textContent = "おめでとう！君の今回の成績は80点以上！よって「豊城学Ⅱ」の単位取得条件達成だ！この講義は1220単位に相当するから一気に卒業単位をゲットだね！でも君の成績はA評価！もう一度挑戦してまだまだ上を目指そう！";
     }
 }
 
-if (score >=90){
-    if(score<100){
+if (score2 >=90){
+    if(score2<100){
         document.getElementById('S').textContent = "おめでとう！君の今回の成績は90点以上！よって「豊城学Ⅱ」の単位取得条件達成だ！この講義は1220単位に相当するから一気に卒業単位をゲットだね！でも君の成績はS評価！満点まであと少し！頑張ろう！";
     }
 }
 
-if (score === 100){
+if (score2 === 100){
         document.getElementById('manten').textContent = "ついにやったか！夢の100点到達！約束通りエクストラステージの挑戦権を与えよう。ここにある3問は間違えても答えを表示しないから実力で解いてみよう！";
         document.querySelector('.ex').style.display = 'block';
 }
 
 }
 
-document.getElementById("result").textContent =  score + "点";
+document.getElementById("result").textContent =  score2 + "点";
 
-const share_title = `とよシローなにシロークイズ２${score}点でした。`;
+const share_title = `とよシローなにシロークイズ２${score2}点でした。`;
   const share_twitter = document.getElementById("js-share-twitter");
   share_twitter.setAttribute(
       "href",
