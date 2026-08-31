@@ -521,5 +521,5 @@ const share_title = `とよシローなにシロークイズ２${score2}点で�
   const share_twitter = document.getElementById("js-share-twitter");
   share_twitter.setAttribute(
       "href",
-      "https://twitter.com/share?url=" + "https://jundouxibei-web.github.io/tomisiropremium.-.104460/" + "&text=" + share_title + "&hashtags=とよシローなにシロークイズ"
+      "https://twitter.com/share?url=" + "https://jundouxibei-web.github.io/tomisiropremium2.kuizu2.104460/" + "&text=" + share_title + "&hashtags=とよシローなにシロークイズ"
   );
